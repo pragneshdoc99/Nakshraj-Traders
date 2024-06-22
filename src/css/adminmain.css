@@ -1,0 +1,211 @@
+/* eslint-disable  */
+
+@font-face {
+    font-family: 'itb-cairo-font';
+    src: url("../fonts/cairo/Cairo-VariableFont_wght.ttf");
+}
+
+html,
+body {
+    /* -webkit-overflow-y: auto; */
+    /* -webkit-overflow-scrolling: touch; */
+    padding-right: 0 !important;
+    padding: 0!important;
+    overflow: hidden;
+}
+
+.margintopleft {
+    margin-top: 94px;
+    margin-left: 260px;
+    /* width: -webkit-fill-available;
+  width: -moz-fill-available;
+  
+  width: fill-available; */
+    width: 100%;
+    width: -moz-available;
+    /* WebKit-based browsers will ignore this. */
+    width: -webkit-fill-available;
+    /* Mozilla-based browsers will ignore this. */
+    /* width: fill-available; */
+}
+
+
+/* @-moz-document url-prefix() {
+  .margintopleft {
+    width: 100%;
+  }
+} */
+
+@media(max-width:1200px) {
+    .margintopleft {
+        margin-left: 0;
+    }
+}
+
+.margintopright {
+    margin-top: 94px;
+    margin-right: 260px;
+    /* width: -webkit-fill-available;
+  width: -moz-fill-available;
+  
+  width: fill-available; */
+    width: 100%;
+    width: -moz-available;
+    /* WebKit-based browsers will ignore this. */
+    width: -webkit-fill-available;
+    /* Mozilla-based browsers will ignore this. */
+    /* width: fill-available; */
+}
+
+@media(max-width:1200px) {
+    .margintopright {
+        margin-right: 0;
+    }
+}
+
+.widthlogoadmin {
+    width: 150px;
+}
+
+.centertitleadmin {
+    display: flex;
+    width: 100%;
+    /* justify-content: center; */
+}
+
+
+/* .MuiButton-root {
+
+  color: black !important;
+} */
+
+.blackcolor {
+    color: black !important;
+    border-bottom: 0 !important;
+}
+
+.MuiTableCell-body {
+    color: black !important;
+}
+
+.MuiSvgIcon-colorPrimary,
+.MuiTypography-colorPrimary {
+    color: #000077 !important;
+}
+
+.MuiFab-primary,
+.MuiLinearProgress-barColorPrimary {
+    background: #000077 !important;
+}
+
+.MuiTableCell-root {
+    font-size: 1.1rem !important;
+    padding: 10px !important;
+}
+
+.MuiAppBar-colorPrimary {
+    background-color: #000077 !important;
+}
+
+.MuiButton-containedPrimary {
+    background: #000077 !important;
+}
+
+.MuiFormHelperText-root {
+    font-size: 0.9rem !important;
+}
+
+.overflowtable {
+    overflow: auto;
+    height: 50vh;
+}
+
+.overflowform {
+    overflow-y: auto;
+    height: 70vh;
+}
+
+.overflowdashboard {
+    height: 70vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+@media(min-width:1500px) {
+    .overflowtable {
+        height: 60vh;
+    }
+    .overflowdashboard {
+        height: 80vh;
+        overflow-y: auto;
+    }
+}
+
+.MuiButton-root,
+.MuiTypography-body2,
+.MuiTab-root {
+    /* itb-cairo-font font-family: 'Poppins', sans-serif !important; */
+    font-family: 'Cairo', sans-serif !important;
+    font-weight: bold !important;
+}
+
+.MuiTableCell-root,
+.MuiFormLabel-root,
+.MuiTypography-body1 {
+    font-family: 'Cairo', sans-serif !important;
+    /* font-family: 'Poppins', sans-serif !important; */
+}
+
+.MuiTableCell-head {
+    font-weight: bold !important;
+}
+
+.MuiFab-extended.MuiFab-sizeSmall {
+    border-radius: 4px !important;
+}
+
+.MuiOutlinedInput-root.Mui-focused .MuiOutlinedInput-notchedOutline {
+    border-color: #000077 !important;
+}
+
+.MuiCircularProgress-colorSecondary {
+    color: #000077 !important;
+}
+
+@media(max-width:600px) {
+    .MuiTypography-h4 {
+        font-size: 1.5rem !important;
+    }
+}
+
+.MuiAppBar-positionFixed {
+    padding-right: 0 !important;
+}
+
+::placeholder {
+    font-family: 'Cairo', sans-serif !important;
+    /* font-family: 'Poppins', sans-serif !important; */
+}
+
+.nodataimg {
+    width: 500px;
+    display: flex;
+    margin: 0 auto;
+}
+
+@media(max-width:600px) {
+    .nodataimg {
+        width: 250px;
+    }
+}
+
+@media(min-width:1500px) {
+    .nodataimg {
+        width: 650px;
+    }
+}
+
+
+/* .borderzero {
+  border: 0 !important;
+} */

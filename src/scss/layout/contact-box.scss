@@ -1,0 +1,54 @@
+.contact-box {
+  .contact-box--field {
+    display: flex;
+    flex-wrap: wrap;
+
+    &.two--coloumn {
+      .field-container {
+        max-width: 50%;
+        flex: 0 0 50%;
+
+        &.first-letter-input input {
+          .first-letter-input textarea {
+            background-color: transparent;
+            width: 100%;
+            padding-left: 0
+          }
+        }
+      }
+    }
+
+    .field-container {
+      margin-bottom: 70px;
+      padding-right: 30px;
+
+      &.single-field {
+        max-width: 100%;
+        flex: 0 0 100%;
+      }
+    }
+
+    input,
+    textarea {
+      color: white;
+
+      @include placeholder {
+        color: white;
+      }
+    }
+  }
+}
+
+@media (min-width: 320px) and (max-width: 575px) {
+  .contact-box {
+    .contact-box--field {
+      &.two--coloumn {
+        .field-container {
+          margin-bottom: 30px;
+          max-width: 100%;
+          flex: 0 0 100%;
+        }
+      }
+    }
+  }
+}

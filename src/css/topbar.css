@@ -1,0 +1,71 @@
+.txtleft {
+    text-align: left !important;
+}
+
+.txtright {
+    text-align: right !important;
+}
+
+.btnleft {
+    margin-left: 8px !important;
+}
+
+.btnright {
+    margin-right: 8px !important;
+}
+
+.labelright {
+    margin-right: 10px !important;
+}
+
+.labelleft {
+    margin-left: 10px !important;
+}
+
+.btnRightDetails {
+    margin-right: 5px !important;
+}
+
+.btnLeftDetails {
+    margin-left: 5px !important;
+}
+
+.sideBtn {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.labelUserLeft {
+    margin-bottom: 0px !important;
+    margin-left: 10px !important;
+}
+
+.labelUserRight {
+    margin-bottom: 0px !important;
+    margin-right: 10px !important;
+}
+
+.btnReportleft {
+    color: "white";
+    height: 30;
+    float: "left";
+    transform: "translateX(10%)";
+}
+
+.btnReportright {
+    color: "white";
+    height: 30;
+    float: "right";
+    transform: "translateY(10%)";
+}
+
+.txtTableleft {
+    text-align: left !important;
+    color: #228539 !important;
+}
+
+.txtTableright {
+    text-align: right !important;
+    color: #228539 !important;
+}

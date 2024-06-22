@@ -1,0 +1,98 @@
+.slick-slide{
+outline: none;
+}
+
+.slick-prev,
+.slick-next {
+  width: auto;
+  height: auto;
+}
+
+.slick-prev::before,
+.slick-next::before {
+}
+
+.slick-prev {
+  left: -35px;
+}
+
+.slick-next {
+  right: -35px;
+}
+
+.slick-arrow::before {
+  font-family: business-mlz;
+  font-size: 44px;
+}
+
+.slick-next::before {
+  content: "r";
+}
+
+.slick-prev::before {
+  content: "l";
+}
+
+.slick-dots {
+  bottom: -45px;
+  li {
+    width: auto;
+    height: auto;
+    button {
+      width: auto;
+      height: auto;
+      padding: 0;
+
+      &:before {
+        position: relative;
+        width: auto;
+        height: auto;
+        font-size: 55px;
+        color: #fff;
+      }
+    }
+  }
+
+  li.slick-active {
+    button {
+      &:before {
+        color: #fff;
+      }
+    }
+  }
+}
+
+.our-clients {
+  .slick-list {
+    padding: 10px 0;
+  }
+
+  .slick-prev,
+  .slick-next {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+    &:before {
+      color: #000;
+    }
+  }
+
+  .slick-dots {
+    li {
+      button {
+
+        &:before {
+          color: #000;
+        }
+      }
+    }
+
+    li.slick-active {
+      button {
+        &:before {
+          color: #000;
+        }
+      }
+    }
+  }
+}

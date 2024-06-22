@@ -1,0 +1,108 @@
+.hero-banner {
+  height: 110vh;
+  position: relative;
+  background-image: url('../images/banner.png');
+  background-position: bottom center;
+  background-size: cover;
+  /* display: flex;
+       justify-content: center;
+       align-items: center; */
+
+  svg {
+    width: 480px;
+    position: absolute;
+  }
+
+  .hero-melzo {
+    position: relative;
+  }
+
+  .hero-awesome {
+    path {
+      stroke-dasharray: 4150;
+      stroke-dashoffset: 4150;
+      animation: awesome-loader 6s cubic-bezier(0.78, 0.07, 0.92, 0.83) reverse;
+      animation-delay: 6s;
+      stroke: #fff;
+      stroke-width: 2;
+    }
+  }
+
+  .hero-discover {
+    path {
+      stroke-dasharray: 4150;
+      stroke-dashoffset: 4150;
+      animation: discovery-loader 6s cubic-bezier(0.78, 0.07, 0.92, 0.83)
+        reverse;
+      stroke: #fff;
+      stroke-width: 2;
+    }
+  }
+
+  .hero-melzo {
+    path {
+      stroke-dasharray: 820;
+      stroke-dashoffset: 820;
+      animation: melzo-loader 6s cubic-bezier(0.78, 0.07, 0.92, 0.83);
+      animation-fill-mode: forwards;
+      animation-delay: 12s;
+      stroke: #fff;
+      stroke-width: 2;
+    }
+  }
+
+  .banner--details {
+    position: absolute;
+    left: 50%;
+    top: 50vh;
+    transform: translate(-50%, -50%);
+  }
+}
+
+@keyframes discovery-loader {
+  0% {
+    stroke-dashoffset: 4150;
+  }
+
+  25% {
+    fill: #fff;
+    stroke-dashoffset: 3800;
+  }
+}
+
+@keyframes awesome-loader {
+  0% {
+    stroke-dashoffset: 4150;
+  }
+
+  25% {
+    fill: #fff;
+    stroke-dashoffset: 3800;
+  }
+}
+
+@keyframes melzo-loader {
+  0% {
+    stroke-dashoffset: 820;
+  }
+
+  25% {
+    fill: #fff;
+    stroke-dashoffset: 0;
+  }
+
+  100% {
+    fill: #fff;
+    stroke-dashoffset: 0;
+    stroke: transparent;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 575px) {
+  .hero-banner {
+    svg {
+      width: 250px;
+      position: absolute;
+    }
+  }
+}

@@ -1,0 +1,58 @@
+﻿.subscribe-box {
+  position: relative;
+  display: inline-flex;
+  flex-wrap: wrap;
+  background-color: #f3f3f3;
+  overflow: hidden;
+  @include border-radius($component-radius);
+  // border: 2px solid currentColor;
+
+  .subscribe--form-fields {
+    flex-basis: auto;
+  }
+
+  input {
+    flex: 1 0 60%;
+    box-shadow: none;
+    max-width: 60%;
+  }
+
+  button {
+    right: 0;
+    flex: 1 0 140px;
+  }
+
+  .thanks-message {
+    margin-top: 10px;
+    font-family: $business-secondary-font;
+    color: #656565;
+    padding-left: 20px;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 1200px) {
+  .subscribe-box {
+    display: flex;
+
+    input {
+      max-width: calc(100% - 140px);
+    }
+    button {
+      flex: 1 0 140px;
+    }
+  }
+}
+
+// @media (min-width: 577px) and (max-width: 767px) {
+//   .subscribe-box {
+//     display: flex;
+
+//     input {
+//       max-width: calc(100% - 140px);
+//     }
+//     button {
+//       flex: 1 0 140px;
+
+//     }
+//   }
+// }

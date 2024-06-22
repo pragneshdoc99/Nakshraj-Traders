@@ -1,0 +1,20 @@
+﻿
+.page-heading {
+    @include fluid-type(font-size, 320px, 1366px, 28px, 90px);
+}
+
+.page-sub-heading {
+    @include fluid-type(font-size, 320px, 1366px, 18px, 32px);
+}
+
+.banner-heading {
+    @include fluid-type(font-size, 320px, 1366px, 36px, 63px);
+}
+
+.banner-sub-heading {
+    @include fluid-type(font-size, 320px, 1366px, 24px, 36px);
+}
+
+.banner-description {
+    @include fluid-type(font-size, 320px, 1366px, 14px, 20px);
+}

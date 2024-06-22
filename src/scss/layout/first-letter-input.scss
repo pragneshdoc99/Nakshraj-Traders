@@ -1,0 +1,67 @@
+.first-letter-input {
+  position: relative;
+
+  input,
+  textarea {
+    background-color: transparent;
+    width: 100%;
+    padding-left: 0;
+
+    & ~ label {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      right: 15px;
+      font-size: 0;
+      height: 0;
+      width:0 ;
+      @include transition(all 0.5s);
+      margin: 0;
+
+      &:before {
+        content: "";
+        position: absolute;
+        background-color: #707070;
+        opacity: 0.6;
+        left: 0;
+        bottom: 0;
+        width: 15px;
+        height: 1px;
+        @include transition(all 0.5s);
+      }
+    }
+
+    &:hover ~ label, &:focus ~ label {
+      &:before {
+        background-color: #757575;
+        width: 150px;
+      }
+    }
+  }
+  // input:invalid {
+  //   & ~ label {
+  //     &:before {
+  //       background-color: red;
+  //     }
+  //   }
+  // }
+
+//   textarea {
+//     padding-left: 10px;
+//     & ~ label {
+//       top: 5px;
+//       &:before {
+//         top: 2px;
+//         width: 1px;
+//         height: 15px;
+//       }
+//     }
+
+//     &:focus ~ label {
+//       &:before {
+//         opacity: 1;
+//         height: 100%;
+//       }
+//     }
+//   }
+}

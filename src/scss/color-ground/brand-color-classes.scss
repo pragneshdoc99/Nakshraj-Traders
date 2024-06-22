@@ -1,0 +1,31 @@
+﻿.brand--font-color {
+    color: $brand-color !important;
+}
+
+.brand--bg-color {
+    background-color: $brand-color;
+    color: #fff;
+}
+
+.brand--border-color {
+    border-color: $brand-color;
+}
+
+/*in primary hover variables*/
+.hover--brand-border {
+    &:hover {
+        border-color: $brand-color;
+    }
+}
+
+.hover--brand-font-color {
+    &:hover {
+        color: $brand-color !important;
+    }
+}
+
+.hover--brand-bg-color {
+    &:hover {
+        background-color: $brand-color !important;
+    }
+}

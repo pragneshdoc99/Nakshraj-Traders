@@ -1,0 +1,13 @@
+::-moz-selection {
+  background-color: $brand-color;
+  color: #fff;
+}
+::selection {
+  background-color: $brand-color;
+  color: #fff;
+}
+
+a::selection {
+  background-color:#fff;
+  color: $brand-color;
+}

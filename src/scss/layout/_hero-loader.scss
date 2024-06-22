@@ -1,0 +1,32 @@
+.loader {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background: linear-gradient(0deg, #61b772, $brand-color);
+  background-size: cover;
+  z-index: 11;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  animation: loader-bg 6s infinite;
+  transition: all 0.5s;
+  // display: none;
+
+  .loader--overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    // background-color: rgba(#000,.50);
+  }
+}
+
+@keyframes loader-bg {
+  from {
+    background: linear-gradient(0deg, #61b772, $brand-color);
+  }
+  to {
+    background: linear-gradient(360deg, #61b772, $brand-color);
+  }
+}

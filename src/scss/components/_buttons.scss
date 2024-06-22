@@ -1,0 +1,115 @@
+﻿// .btn-mz {
+//   border: none;
+//   padding: 5px 20px;
+//   font-size: 16px;
+//   cursor: pointer;
+//   @include transition(all 0.3s);
+//   display: inline-block;
+//   font-family: $business-secondary-font;
+//   font-weight: $bold;
+//   text-align: center;
+//   border: 2px solid transparent;
+//   min-width: 120px;
+
+//   &::first-letter {
+//     text-transform: uppercase;
+//   }
+
+//   &.btn--full {
+//     width: 100%;
+//     text-align: center;
+//   }
+
+//   &.is--disabled {
+//     cursor: not-allowed;
+//     pointer-events: none;
+//     span {
+//       opacity: 0.52;
+//     }
+//   }
+
+//   &:focus {
+//     outline: none;
+//   }
+
+//   &:hover {
+//     color: #fff;
+//     text-decoration: none;
+//   }
+// }
+
+.btn--group {
+  .btn-mz:nth-of-type(2) {
+    margin-left: 20px;
+  }
+
+  .btn-mz--third {
+    margin-left: 20px;
+  }
+}
+
+.btn--brand-color {
+  --color: #{$brand-color};
+}
+
+.btn--info-color {
+  --color: #{$info-color};
+}
+
+.btn--product-color {
+  --color: #{$product-color};
+}
+
+.btn--details-color {
+  --color: #{$details-color};
+}
+
+.btn--business-color {
+  --color: #{$business-color};
+}
+
+.btn--userinput-color {
+  --color: #{$userinput-color};
+}
+
+.btn--red-color {
+  --color: #{$red-color};
+}
+
+.btn--yellow-color {
+  --color: #{$yellow-color};
+}
+
+.btn--radius {
+  @include border-radius($component-radius);
+}
+
+.btn--outline {
+  color: var(--color);
+  border-color: var(--color);
+  background-color: transparent;
+}
+
+.btn--filled {
+  background-color: var(--color);
+  color: #fff;
+}
+
+.btn--shadow {
+  box-shadow: 0 0 6px var(--color);
+  @include transition(all 0.5s);
+
+  &:hover {
+    box-shadow: 0 0 27px 0 var(--color);
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 1023px) {
+  .btn--shadow {
+    box-shadow: 0 0 27px 0 var(--color);
+  }
+
+  .btn--group .btn-mz--third {
+    margin-left: 0px;
+  }
+}

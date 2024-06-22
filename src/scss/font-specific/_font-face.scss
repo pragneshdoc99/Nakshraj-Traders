@@ -1,0 +1,66 @@
+﻿
+html {
+  font-display: swap;
+}
+
+$thin: 100;
+$ultralight: 200;
+$extralight: 200;
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semibold: 600;
+$bold: 700;
+$extrabold: 800;
+$black: 900;
+
+@font-face {
+  font-family: "business-mlz";
+  src: url("../fonts/business-mlz.eot");
+  src: url("../fonts/business-mlz.eot?#iefix") format("embedded-opentype"), url("../fonts/business-mlz.woff") format("woff"),
+    url("../fonts/business-mlz.ttf") format("truetype"), url("../fonts/business-mlz.svg#business-mlz") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]:before {
+  font-family: "business-mlz" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="mlz-"]:before,
+[class*=" mlz-"]:before {
+  font-family: "business-mlz" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.mlz-angle-right:before {
+  content: "\72";
+}
+.mlz-angle-left:before {
+  content: "\6c";
+}
+.mlz-right-open-big:before {
+  content: "\61";
+}
+.mlz-minus:before {
+  content: "\62";
+}
+.mlz-bars:before {
+  content: "\63";
+}

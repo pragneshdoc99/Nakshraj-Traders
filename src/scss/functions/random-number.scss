@@ -1,0 +1,18 @@
+@function randomNum($min, $max) {
+    $rand: random();
+    $randomNum: $min + floor($rand * (($max - $min) + 1));
+    
+    @return $randomNum;
+  }
+
+  // @for $i from 1 through 8 {
+        //   &-#{$i} {
+        //     //scss random function to the duration and the delay
+        //     // font-size: #{randomNum(-5, 5)};
+        //     left: percentage(randomNum(-5,5) / 100);
+        //     top: percentage(randomNum(-5,5) / 100);
+        //     position: absolute;
+        //     width: 100%;
+        //     z-index: -#{$i};
+        //   }
+        // }
